@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Feedback Form</h1>
+        </header>
+
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+<br/>
+<br/>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+<br/>
+<br/>
+        <fieldset>
+            <legend>Rating :</legend>
+            <input type="radio" id="Excellent" name="Rating" value="Excellent">
+            <label for="Excellent">Excellent</label>
+
+            <input type="radio" id="Good" name="Rating" value="Good">
+            <label for="Good">Good</label>
+        
+            <input type="radio" id="Average" name="Rating" value="Average">
+            <label for="Average">Average</label>
+        
+            <input type="radio" id="Poor" name="Rating" value="Poor">
+            <label for="Poor">Poor</label>
+        </fieldset>
+        <br/>
+        <br/>
+
+       <label for="Language">Favorite Programming Language :</label>
+       <select id="Language" name="Language">
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="TypeScript">TypeScript</option>
+        <option value="Java">Java</option>
+       </select>
+        <br/>
+        <br/>
+
+        <label for="feedback">Feedback Message:</label>
+        <textarea id="feedback" name="feedback"
+          placeholder="Enter your feedback" required></textarea>
+
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+<!--  🎤 Interview revision
+Element	Purpose
+<select>	 Creates a dropdown list
+<option>	 Defines a choice in a dropdown
+<textarea>	 Accepts multiline text
+<fieldset> 	 Groups related form controls
+<legend>	 Provides a caption for a fieldset
+<label>	     Describes a form control and can focus or select it when clicked -->

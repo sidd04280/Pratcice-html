@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+<br/>
+<br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+<br/>
+<br/>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Enter Your Password" required>
+<br/>
+<br/>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+<br/>
+<br/>   
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="35" placeholder="Enter Your Age" required>
+<br/>
+<br/>
+        <label for="experience">Work Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="10" placeholder="Enter Your Work Experience in Years" required>
+<br/>
+<br/>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf" required>
+    </form>
+</body>
+</html>
+
+<!-- 🎤 Interview point
+If an interviewer asks "What is HTML5 form validation?", you can say:
+HTML5 form validation allows the browser to check user input before submission using attributes 
+such as required, min, max, minlength, maxlength, pattern, type, and accept. -->

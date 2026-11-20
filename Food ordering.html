@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Welcome to Food Ordering Website</h1>
+        </header>
+        <label for="Food">Choose Your Food :</label>
+        <br/>
+        <!-- Here i have used input type radio because only one should be choosen -->
+        <input type="radio" name="food" value="pizza">pizza
+        <input type="radio" name="food" value="burger">Burger
+        <input type="radio" name="food" value="pasta">Pasta
+        <input type="radio" name="food" value="biryani">Biryani
+<br/>
+<br/>
+
+        <label for="Toppings">Choose your Topping :</label>
+        <br/>
+        <!-- Here i have used type checkbox because multiple toppings can be choosen -->
+        <input type="checkbox" name="topping" value="cheese">Cheese
+        <input type="checkbox" name="topping" value="onion">Onion
+        <input type="checkbox" name="topping" value="tomato">Tomato
+        <input type="checkbox" name="topping" value="olives">Olives
+<br/>
+<br/>
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
+
+
+
+
+<!-- chatgpt coede  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Food Ordering Website</h1>
+    </header>
+
+    <form>
+        <fieldset>
+            <legend>Choose Your Food:</legend>
+
+            <input type="radio" id="pizza" name="food" value="pizza" required>
+            <label for="pizza">Pizza</label>
+
+            <input type="radio" id="burger" name="food" value="burger">
+            <label for="burger">Burger</label>
+
+            <input type="radio" id="pasta" name="food" value="pasta">
+            <label for="pasta">Pasta</label>
+
+            <input type="radio" id="biryani" name="food" value="biryani">
+            <label for="biryani">Biryani</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Choose Your Toppings:</legend>
+
+            <input type="checkbox" id="cheese" name="topping" value="cheese">
+            <label for="cheese">Cheese</label>
+
+            <input type="checkbox" id="onion" name="topping" value="onion">
+            <label for="onion">Onion</label>
+
+            <input type="checkbox" id="tomato" name="topping" value="tomato">
+            <label for="tomato">Tomato</label>
+
+            <input type="checkbox" id="olives" name="topping" value="olives">
+            <label for="olives">Olives</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+</body>
+</html>
+
+
+
+<!-- 🎤 Interview question: Radio buttons vs checkboxes -->
+
+<!-- Radio buttons                                            Checkboxes -->
+
+<!-- Usually select one option from a group	             Select zero, one, or multiple options
+     Share the same name	                             Can share a name when representing related choices
+     Example: choose one food                            Example: choose several toppings
+
+Easy way to remember: Radio = one choice; Checkbox = multiple choices. -->
