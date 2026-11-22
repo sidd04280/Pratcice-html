@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <form>
+        <h1>Job Application Form</h1>
+        <fieldset>
+             <legend>Personal Information</legend>
+            <br/>
+            <br/>
+             <label for="name">Full Name</label>
+             <br/>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br/>
+            <br/>
+            <label for="email">Email</label>
+            <br/>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br/>
+            <br/>
+            <label for="phone">Phone Number</label>
+            <br/>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <br/>
+            <br/>
+         </fieldset>
+         <fieldset>
+            <legend>Job Details</legend>
+            <label for="position">Position Applied For</label>
+            <br/>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="developer">Software Developer</option>
+                <option value="designer">UI/UX Designer</option>
+                <option value="manager">Project Manager</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="experience">Years of Experience</label>
+            <br/>
+            <input type="radio" id="experience" name="experience" value="Fresher" required>
+            <label for="fresher">Fresher</label>
+            <input type="radio" id="experience" name="experience" value="1-2Years" required>
+            <label for="1-2Years">1-2 Years</label>
+            <input type="radio" id="experience" name="experience" value="3+Years" required>
+            <label for="3+Years">3+ Years</label>
+            <br/>
+            <br/>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css3" name="skills" value="CSS3">
+            <label for="css3">CSS3</label>
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="react" name="skills" value="REACT">
+            <label for="react">REACT</label>
+            <input type="checkbox" id="node.js" name="skills" value="NODE.JS">
+            <label for="node.js">Node.JS</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="resume">Upload Resume</label>
+            <br/>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <br/>
+            <br/>
+            <label for="cover letter">Why should we hire you?</label>
+            <br/>
+            <textarea id="cover letter" name="cover letter" rows="4" cols="50" placeholder="Write a short introduction..."></textarea>
+            <br/>
+            <br/>
+            <button type="submit">Submit Application</button>
+        </fieldset>
+       
+    </form>
+</body>
+</html>
